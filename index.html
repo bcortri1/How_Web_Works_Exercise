@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Web Works Exercise</title>
+</head>
+<body>
+    <h1>How Web Works Exercise</h1>
+    <h2>Part One</h2>
+    <ul>
+        <li>What is HTTP?</li>
+        <ul>
+            <li>Hypertext Transfer Protocol (standard web) (How browsers and servers communicate)</li>
+        </ul><br>
+        <li>What is a URL?</li>
+        <ul>
+            <li>URLs denote a protocol, the hostname, a port, a resource accessed and a query</li>
+        </ul><br>
+        <li>What is DNS?</li>
+        <ul>
+            <li>DNS is a database that associates hostnames with ip addresses</li>
+        </ul><br>
+        <li>What is a query string?</li>
+        <ul>
+            <li>Query strings are data that is queried to a webserver. Format varies from each website</li>
+        </ul><br>
+        <li>What are two HTTP verbs and how are they different?</li>
+        <ul>
+            <li>GET makes a request that has no side effiects</li>
+            <li>POST makes a request that has side effiects via arguments sent</li>
+        </ul><br>
+        <li>What is an HTTP request?</li>
+        <ul>
+            <li>A GET request with a target hostname and URL</li>
+        </ul><br>
+        <li>What is an HTTP response?</li>
+        <ul>
+            <li>The data you requested, metadata, and the status code</li>
+        </ul><br>
+        <li>What is an HTTP header? Give a couple examples of request and response headers you have seen.</li>
+        <ul>
+            <li>The metadata sent along with a webpage</li>
+            <li>Hostnames, Date, Language, Cookies, and more</li>
+        </ul><br>
+        <li>What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?</li>
+        <ul>
+            <li></li>
+        </ul><br>
+    </ul>
+    <h2>Part Two</h2>
+    <ul>
+        <li>Using curl, make a GET request to the icanhazdadjoke.com API to find all jokes involving the word “pirate”</li>
+        <ul>
+            <li>curl -H "Accept: application/json" "https://www.icanhazdadjoke.com/search?term=pirate"</li>
+        </ul><br>
+        <li>Use dig to find what the IP address is for icanhazdadjoke.com</li>
+        <ul>
+            <li></li>
+        </ul><br>
+        <li>Make a simple web page and serve it using python3 -m http.server. Visit the page in a browser.</li>
+        <ul>
+            <li>Complete also utilized live server</li>
+        </ul><br>
+    </ul>
+    <h2>Part Three</h2>
+    <ul>
+        <li>Build a very simple HTML form that uses the GET method (it can use the same page URL for the action) when the form is submitted.--></li>
+        <li>Add a field or two to the form and, after submitting it, explore in Chrome Developer tools how you can view the request and response headers</li>
+        <li>Edit the page to change the form type to POST, refresh in the browser and re-submit. Do you still see the field in the query string? Explore in Chrome how you can view the request and response headers, as well as the form data.</li>
+    </ul><br>
+    <form action="" method="get">
+        <input type="text">
+        <button type="submit">GET</button>
+
+    </form>
+    <form action="" method="post">
+        <input type="text">
+        <button type="submit">POST</button>
+
+    </form>
+</body>
+</html>
